@@ -1,0 +1,33 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "Simple starter backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf ./build && mkdir ./build && tsc --project ./build",
+    "start": "NODE_ENV=production node build/index.js",
+    "dev": "nodemon --watch ./src --exec \"tsc\" ./index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fkante/node-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fkante/node-starter/issues"
+  },
+  "homepage": "https://github.com/fkante/node-starter#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.14",
+    "cors": "^2.8.5"
+  }
+}
